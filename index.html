@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6fbff">
+  <meta name="description" content="SmileScan AI is an educational science fair prototype exploring AI and dental images.">
+  <title>SmileScan AI — A clearer look at your smile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="SmileScan AI home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40"><path d="M12 8c-4 0-7 3-7 8 0 7 5 18 9 18 3 0 2-7 6-7s3 7 6 7c4 0 9-11 9-18 0-5-3-8-7-8-3 0-5 2-8 2s-5-2-8-2Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="m14 19 4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span>SmileScan<span class="brand-ai"> AI</span><small>EDUCATIONAL DENTAL PROJECT</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#how-it-works">How it works</a><a href="#science">The science</a><a href="#experiment">Experiment</a>
+    </nav>
+    <a class="button button-small button-dark" href="#scanner">Try the demo <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> A SCIENCE FAIR EXPLORATION</div>
+        <h1>A clearer look<br>at your <span class="gradient-text">smile.</span></h1>
+        <p class="hero-description">Explore how computer vision can describe what appears in a dental image. Upload a photo, review cautious AI observations, and discover why a dentist's expertise still matters.</p>
+        <div class="hero-actions">
+          <a href="#scanner" class="button button-primary">Explore SmileScan <span aria-hidden="true">→</span></a>
+          <a href="#how-it-works" class="text-link">See how it works <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="trust-row">
+          <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 4.6 3 8.1 7 10 4-1.9 7-5.4 7-10V6l-7-3Z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg> Educational, not diagnostic</span>
+          <span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="1.7"/></svg> Images not saved by this app</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a tooth and AI scan">
+        <div class="art-glow"></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="scan-card">
+          <div class="scan-card-top"><span class="tiny-status"></span><span>VISUAL EXPLORATION</span><span class="scan-dots">•••</span></div>
+          <div class="tooth-illustration">
+            <svg viewBox="0 0 280 300" role="img" aria-label="Stylized illustration of a tooth, not a real scan">
+              <defs><linearGradient id="toothFill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#dceefa"/></linearGradient><linearGradient id="lineFill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#65d8d0"/><stop offset="1" stop-color="#438bdb"/></linearGradient></defs>
+              <ellipse cx="140" cy="255" rx="77" ry="13" fill="#8bb6d4" opacity=".2"/>
+              <path d="M82 43C53 45 39 67 43 98c4 29 19 44 25 65 8 30 8 67 24 73 15 5 21-31 32-49 4-7 8-10 16-10s12 3 16 10c11 18 17 54 32 49 16-6 16-43 24-73 6-21 21-36 25-65 4-31-10-53-39-55-19-1-34 11-58 11S101 42 82 43Z" fill="url(#toothFill)" stroke="#9fc7e4" stroke-width="2.5"/>
+              <path d="M76 84c17-16 38-12 64-7 27 5 44-8 63 2" fill="none" stroke="#c3dff0" stroke-width="3" stroke-linecap="round"/>
+              <path d="M62 132c18-17 32-7 48-9 22-2 42-17 66-6 17 8 28 5 42-3" fill="none" stroke="#8cd9d2" stroke-width="2" stroke-dasharray="4 6"/>
+              <circle cx="191" cy="123" r="6" fill="#42c9be"/><circle cx="191" cy="123" r="13" fill="none" stroke="#42c9be" opacity=".55"/>
+              <path d="M198 123h39v-24h18" fill="none" stroke="url(#lineFill)" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="255" cy="99" r="3" fill="#438bdb"/>
+              <path d="M83 180H44v22H26" fill="none" stroke="#438bdb" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="25" cy="202" r="3" fill="#438bdb"/>
+              <path d="M94 220c9-16 13-34 25-43" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+            </svg>
+          </div>
+          <div class="scan-caption"><span class="caption-icon">✦</span><div><strong>AI-assisted observation</strong><small>Not a medical diagnosis</small></div><span class="caption-arrow">↗</span></div>
+        </div>
+        <div class="float-chip chip-top"><span class="chip-icon teal">✦</span><span><strong>Computer vision</strong><small>Exploring image patterns</small></span></div>
+        <div class="float-chip chip-bottom"><span class="chip-icon blue">⌁</span><span><strong>Human expertise</strong><small>A dentist confirms concerns</small></span></div>
+        <div class="sparkle sparkle-a">✳</div><div class="sparkle sparkle-b">✧</div>
+      </div>
+      <div class="hero-bottom"><span>01 / THE IDEA</span><span class="hero-bottom-line"></span><span>AI × DENTAL EDUCATION</span></div>
+    </section>
+
+    <section class="stats-strip">
+      <div class="stat-item"><span class="stat-symbol">01</span><div><strong>Upload an image</strong><small>Photo or X-ray, clearly labeled</small></div></div>
+      <div class="stat-item"><span class="stat-symbol">02</span><div><strong>Explore observations</strong><small>Careful, plain-language feedback</small></div></div>
+      <div class="stat-item"><span class="stat-symbol">03</span><div><strong>Learn the limits</strong><small>AI is not a dentist</small></div></div>
+    </section>
+
+    <section class="scanner-section section-wrap" id="scanner">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE INTERACTIVE PROJECT</div><h2>Meet your <span class="gradient-text">SmileScan.</span></h2></div>
+        <p>Try the image workflow. For your privacy, use a sample or your own image only if you are comfortable sending it to Google's AI service for analysis.</p>
+      </div>
+      <div class="scanner-grid">
+        <section class="panel upload-panel" aria-labelledby="upload-title">
+          <div class="panel-heading"><span class="step-number">01</span><div><h3 id="upload-title">Add a dental image</h3><p>Choose the type that best describes your image.</p></div></div>
+          <div class="type-selector" role="group" aria-label="Image type">
+            <button type="button" class="type-option selected" data-kind="photo" aria-pressed="true"><span class="type-icon">▧</span><span><strong>Teeth photo</strong><small>Ordinary camera image</small></span><span class="type-check">✓</span></button>
+            <button type="button" class="type-option" data-kind="xray" aria-pressed="false"><span class="type-icon xray-icon">▦</span><span><strong>Dental X-ray</strong><small>Radiograph image</small></span><span class="type-check">✓</span></button>
+          </div>
+          <input id="file-input" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+          <div id="drop-zone" class="drop-zone" tabindex="0" role="button" aria-label="Choose or drop a dental image">
+            <div id="upload-empty" class="upload-empty">
+              <div class="upload-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 21V5m0 0-6 6m6-6 6 6M5 20v6a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2v-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <strong>Drop your image here</strong><span>or <u>browse files</u> on your device</span><small>JPG, PNG or WebP · up to 8 MB</small>
+            </div>
+            <div id="preview-wrap" class="preview-wrap" hidden>
+              <img id="image-preview" alt="Selected dental image preview">
+              <div class="preview-overlay"><span id="file-name">image.png</span><button type="button" id="replace-button" class="mini-button">Replace image</button></div>
+            </div>
+          </div>
+          <div class="privacy-note"><span class="privacy-icon">ⓘ</span><span><strong>Privacy note</strong> Your image is processed for this request and is not saved by this app. If AI mode is enabled, it is sent to Google's Gemini API for analysis.</span></div>
+          <div class="upload-actions"><button id="analyze-button" type="button" class="button button-primary button-full" disabled>Analyze image <span aria-hidden="true">→</span></button><button id="clear-button" type="button" class="button button-quiet" disabled>Clear</button></div>
+          <p id="upload-error" class="error-message" role="alert" hidden></p>
+          <div class="mode-line"><span id="mode-dot" class="mode-dot"></span><span id="mode-text">Checking analysis mode…</span></div>
+        </section>
+
+        <section class="panel results-panel" aria-labelledby="results-title" aria-live="polite">
+          <div class="panel-heading"><span class="step-number">02</span><div><h3 id="results-title">Your exploration report</h3><p>Observations are not diagnoses.</p></div><span id="report-state" class="report-state">WAITING</span></div>
+          <div id="results-empty" class="results-empty">
+            <div class="empty-visual"><div class="empty-circle"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M32 20c-10 0-16 8-15 20 1 12 7 19 10 29 3 11 4 22 10 22 5 0 7-14 13-20 6 6 8 20 13 20 6 0 7-11 10-22 3-10 9-17 10-29 1-12-5-20-15-20-7 0-11 5-18 5s-11-5-18-5Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="m39 47 8 8 15-17" fill="none" stroke="#43c7bb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span class="empty-spark spark-one">✦</span><span class="empty-spark spark-two">✧</span></div>
+            <h4>Your report will appear here</h4><p>Upload an image and start an analysis to explore cautious AI observations and educational next steps.</p>
+            <div class="empty-checks"><span>✓ Image quality review</span><span>✓ Visible observations</span><span>✓ Limitations explained</span></div>
+          </div>
+          <div id="loading-state" class="loading-state" hidden><div class="loader-ring"></div><h4>Exploring your image…</h4><p>The AI is reviewing visible details. This can take a few seconds.</p><div class="loading-track"><span></span></div><small>Please keep this tab open.</small></div>
+          <div id="report-content" class="report-content" hidden></div>
+        </section>
+      </div>
+      <p class="medical-warning"><span>!</span><span><strong>Important:</strong> SmileScan AI is a student science fair prototype, not a medical device. It cannot confirm or rule out dental conditions. If you have pain, swelling, bleeding, or a concern about your teeth, ask a qualified dentist or trusted adult for help.</span></p>
+    </section>
+
+    <section id="how-it-works" class="how-section">
+      <div class="section-wrap">
+        <div class="center-heading"><div class="eyebrow">BEHIND THE SCAN</div><h2>From image to <span class="gradient-text">insight.</span></h2><p>Five simple steps show how a computer can turn pixels into language—without replacing professional care.</p></div>
+        <div class="steps-grid">
+          <article class="step-card"><div class="step-top"><span>01</span><span class="step-illustration">↑</span></div><h3>Upload</h3><p>A person selects a dental photo or an X-ray and previews it before sending.</p><div class="step-line"></div></article>
+          <article class="step-card"><div class="step-top"><span>02</span><span class="step-illustration">⌘</span></div><h3>Prepare</h3><p>The browser sends the image to this website's backend, not directly to a public API key.</p><div class="step-line"></div></article>
+          <article class="step-card"><div class="step-top"><span>03</span><span class="step-illustration">✳</span></div><h3>Analyze</h3><p>A vision-capable AI model looks for patterns and describes what it can cautiously observe.</p><div class="step-line"></div></article>
+          <article class="step-card"><div class="step-top"><span>04</span><span class="step-illustration">▤</span></div><h3>Explain</h3><p>The website presents plain-language observations, uncertainty, and general next steps.</p><div class="step-line"></div></article>
+          <article class="step-card"><div class="step-top"><span>05</span><span class="step-illustration">♡</span></div><h3>Ask a dentist</h3><p>Only a qualified professional can examine a person and confirm a dental problem.</p><div class="step-line"></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="science" class="science-section section-wrap">
+      <div class="science-copy"><div class="eyebrow">THE SCIENCE, SIMPLIFIED</div><h2>What is <span class="gradient-text">computer vision?</span></h2><p class="science-lead">Computer vision is a type of AI that processes images. It learns patterns from examples and uses those patterns to describe or classify new pictures.</p>
+        <div class="science-points">
+          <div class="science-point"><span class="point-icon">01</span><div><strong>Pixels hold information</strong><p>A digital image is made of tiny colored dots called pixels. Lighting, focus, and angle change what those pixels show.</p></div></div>
+          <div class="science-point"><span class="point-icon">02</span><div><strong>AI recognizes patterns</strong><p>A general vision model may describe shapes or colors, but it is not automatically trained or validated to diagnose dental disease.</p></div></div>
+          <div class="science-point"><span class="point-icon">03</span><div><strong>Limits matter</strong><p>Photos cannot reveal everything under a tooth surface. X-rays need specialized interpretation, and an AI can make mistakes.</p></div></div>
+        </div>
+      </div>
+      <div class="science-visual">
+        <div class="visual-header"><span>HOW AN IMAGE BECOMES DATA</span><span class="visual-live"><i></i> CONCEPT</span></div>
+        <div class="pixel-stage"><div class="pixel-tooth"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="pixel-arrow">→</div><div class="pixel-data"><div class="data-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>PIXEL PATTERNS</small><strong>Image data</strong></div></div>
+        <div class="visual-divider"></div><div class="visual-caption"><span class="caption-dot"></span><span>This is a concept illustration—not a real dental scan or a model's output.</span></div>
+      </div>
+    </section>
+
+    <section class="limits-section">
+      <div class="section-wrap limits-inner"><div class="limits-heading"><div class="eyebrow">RESPONSIBLE AI</div><h2>Curious, not <span class="gradient-text">certain.</span></h2><p>Being honest about uncertainty is part of good science. Here's what this prototype can and cannot do.</p></div>
+        <div class="limits-grid"><article class="limit-card can"><div class="limit-icon">✓</div><h3>What it can explore</h3><ul><li>Describe clearly visible features in a photo</li><li>Point out image-quality problems</li><li>Explain why a feature may deserve a professional check</li><li>Demonstrate how a vision model responds to an image</li></ul></article>
+        <article class="limit-card cannot"><div class="limit-icon">×</div><h3>What it cannot promise</h3><ul><li>Diagnose cavities, gum disease, or infection</li><li>Prove that teeth are healthy</li><li>Replace a dental exam or X-ray interpretation</li><li>Give clinically validated confidence percentages</li></ul></article></div>
+      </div>
+    </section>
+
+    <section id="experiment" class="experiment-section section-wrap">
+      <div class="section-heading"><div><div class="eyebrow">TAKE IT TO THE FAIR</div><h2>Run a small <span class="gradient-text">experiment.</span></h2></div><p>Compare AI descriptions with reliable labels from educational images. This helps you study consistency—not prove medical accuracy.</p></div>
+      <div class="experiment-layout">
+        <div class="experiment-info"><div class="experiment-badge">SCIENCE FAIR METHOD</div><h3>Test. Record. Reflect.</h3><p>Use a small set of appropriately licensed educational images with labels supplied by a reliable source. Decide your scoring rules before testing, and never use people's private images without permission.</p><ol><li>Choose and record the source of each image.</li><li>Write down the trusted reference label before AI analysis.</li><li>Record the model's observation exactly and compare fairly.</li><li>Report mismatches and limitations, not just successful examples.</li></ol><div class="experiment-caution">A small classroom experiment is not a clinical validation study.</div></div>
+        <div class="experiment-table-wrap"><div class="table-heading"><div><strong>Observation log</strong><small>Stored only in this open browser tab</small></div><button id="add-row" class="button button-small button-outline">+ Add row</button></div>
+          <div class="table-scroll"><table class="experiment-table"><thead><tr><th>Image ID</th><th>Reference label</th><th>AI observation</th><th>Match?</th><th></th></tr></thead><tbody id="experiment-body"></tbody></table></div>
+          <div class="experiment-footer"><span id="experiment-count">0 records</span><div><span id="experiment-score" class="score-label">Match rate: —</span><button id="export-csv" class="text-link small-link">Export CSV ↗</button></div></div>
+          <p class="table-note">Only mark Yes/No when you have a reliable reference label and a clear rule for what counts as a match. “Not assessed” records are excluded from the match rate.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta"><div class="cta-decoration">✳</div><div class="eyebrow">SCIENCE STARTS WITH QUESTIONS</div><h2>Better technology begins<br>with <span>better questions.</span></h2><p>Explore what AI can see, test where it struggles, and keep people at the center of healthcare.</p><a href="#scanner" class="button button-white">Try SmileScan <span aria-hidden="true">↑</span></a></section>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 40 40"><path d="M12 8c-4 0-7 3-7 8 0 7 5 18 9 18 3 0 2-7 6-7s3 7 6 7c4 0 9-11 9-18 0-5-3-8-7-8-3 0-5 2-8 2s-5-2-8-2Z" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="m14 19 4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span><span>SmileScan<span class="brand-ai"> AI</span><small>A GRADE 7 SCIENCE FAIR PROJECT</small></span></a><p>Built to explore AI responsibly. Not a substitute for professional dental care.</p><span class="footer-copy">© 2026 SmileScan AI · Educational prototype</span></footer>
+</body>
+</html>
